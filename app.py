@@ -44,7 +44,6 @@ def process_image_for_canva():
         # passing a imageUrl in a body payload
         url = request.json["imageUrl"]
         render_factor = int(request.json["render_factor"])
-        print("imageUrl", url)
         # render_factor = 35 #int(request.json["render_factor"])
 
         download(url, input_path)
@@ -82,7 +81,7 @@ def process_image():
     try:
         # passing a source_url as a payload
         url = request.json["source_url"]
-        render_factor = int(request.json["render_factor"]
+        render_factor = int(request.json["render_factor"])
         print("source_url", url)
 
         download(url, input_path)
